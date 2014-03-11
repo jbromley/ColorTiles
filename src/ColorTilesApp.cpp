@@ -30,10 +30,10 @@ private:
     float cameraDistance_;
 };
 
-const int ColorTilesApp::TILE_WIDTH = 8;
-const int ColorTilesApp::TILE_HEIGHT = 8;
-const int ColorTilesApp::TILE_DEPTH = 1;
-const int ColorTilesApp::HALF_WIDTH = 8;
+const int ColorTilesApp::TILE_WIDTH = 16;
+const int ColorTilesApp::TILE_HEIGHT = 16;
+const int ColorTilesApp::TILE_DEPTH = 4;
+const int ColorTilesApp::HALF_WIDTH = 10;
 
 void ColorTilesApp::setup()
 {
@@ -56,9 +56,9 @@ void ColorTilesApp::setup()
     for (int x = -HALF_WIDTH; x <= HALF_WIDTH; ++x) {
         for (int y = -HALF_WIDTH; y <= HALF_WIDTH; ++y) {
             for (int z = -HALF_WIDTH; z <= HALF_WIDTH; ++z) {
-                int xpos = 3 * x * TILE_WIDTH / 2;
-                int ypos = 3 * y * TILE_HEIGHT / 2;
-                int zpos = 4 * z * TILE_WIDTH / 2;
+                int xpos = x * TILE_WIDTH;
+                int ypos = y * TILE_HEIGHT;
+                int zpos = z * TILE_WIDTH;
                 
                 Tile* tile = new Tile(xpos, ypos, zpos,
                                       TILE_WIDTH, TILE_HEIGHT, TILE_DEPTH);
