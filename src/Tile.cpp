@@ -19,7 +19,9 @@ Tile::Tile(int x, int y, int z, int width, int height, int depth)
 void
 Tile::update()
 {
-    lit_ = (static_cast<float>(rand()) / RAND_MAX < duty_);
+    if (static_cast<float>(rand()) / RAND_MAX < duty_) {
+        lit_ = !lit_;
+    }
 }
 
 void
