@@ -71,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				7D2081CB18CF950A00B47BC4 /* Tile.cpp */,
-				7D2081CC18CF950A00B47BC4 /* Tile.h */,
 				5331C48219B843BD93F6B549 /* ColorTilesApp.cpp */,
 			);
 			name = Source;
@@ -125,6 +124,7 @@
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				7D2081CC18CF950A00B47BC4 /* Tile.h */,
 				C1C291745F454B42913EBBB3 /* Resources.h */,
 				460C33ACB74A46CCB543EE93 /* ColorTiles_Prefix.pch */,
 			);
